@@ -12,7 +12,7 @@ const routes: Routes = [
   // path: 'pages' están dentro de PagesRouting
   // path: 'auth' están dentro de AuthRouting
 
-  { path: '', pathMatch: '/dashboard', redirectTo: 'full' },
+  { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
 
   { path: '**', component: NopagefoundComponent },
 ];
